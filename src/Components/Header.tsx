@@ -33,7 +33,7 @@ const Header = () => {
                 <div className="
 
                 bock
-                bg-red-200
+                
                 flex
                 justify-between
 
