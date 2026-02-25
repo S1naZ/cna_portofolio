@@ -33,7 +33,7 @@ const Header = () => {
                 <div className="
 
                 bock
-                
+
                 flex
                 justify-between
 
@@ -140,7 +140,8 @@ const Header = () => {
                                 ></span>
                               </span>
                             </div>
-                            <span>
+
+                                <span className=" text-[18px]">
                                     {currentTime.toLocaleTimeString('en-IR', {
                                         hour12: false,
                                     })}
