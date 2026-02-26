@@ -1,3 +1,5 @@
+import SideBar from "./SideBar.tsx";
+
 const MainPage = () => {
     return (
         <>
@@ -6,13 +8,13 @@ const MainPage = () => {
 
                 w-[1750px]
                 mx-auto
-                h-[2000px]
+                h-[1080px]
 
                 border-x-[#e4e4e7]/50
                 border-x-[1px]
           ">
 
-
+            <SideBar/>
 
 
 

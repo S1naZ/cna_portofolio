@@ -1,5 +1,5 @@
 import HeaderButton from "../Utils/Buttons.tsx";
-import {LinkIcon,GithubIcon,LightModeIcon,DarkModeIcon} from '../svg/svgExport.tsx'
+import {LinkIcon, GithubIcon, LightModeIcon, DarkModeIcon, LanguageIcon} from '../svg/svgExport.tsx'
 import {useEffect, useState} from "react";
 
 const Header = () => {
@@ -30,7 +30,7 @@ const Header = () => {
             border-b-[#e4e4e7]/50
 
 
-            bg-white/30 backdrop-blur-sm">
+            bg-white/30 backdrop-blur-md">
 
                 <div className="
 
@@ -65,7 +65,7 @@ const Header = () => {
                                 block
                                 relative
                                 p-2
-
+                                ml-4
                                 rounded-full
                                 h-full
 
@@ -127,9 +127,9 @@ const Header = () => {
                             }
                         </HeaderButton>
 
-                        {/*<HeaderButton style="mx-2">*/}
-                        {/*    <MusicNoteIcon/>*/}
-                        {/*</HeaderButton>*/}
+                        <HeaderButton style="ml-1 mr-2">
+                            <LanguageIcon style="scale-75" />
+                        </HeaderButton>
 
                         <div className="
                             flex
