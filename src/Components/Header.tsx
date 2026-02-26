@@ -15,6 +15,8 @@ const Header = () => {
 
     }, []);
 
+    const Availability = currentTime.getHours()>8 &&  currentTime.getHours()<18
+
     return (
         <>
             <div className="
@@ -74,15 +76,28 @@ const Header = () => {
                         </a>
 
                         <a href="/"  className="ml-5">
-                            home
+                            Home
                         </a>
-                        <a href="/" className={"flex ml-5 items-center"}>
-                            linkedin
-                            <LinkIcon style={"scale-72"}/>
+
+                        <a href="/" className={"flex group transition ml-5 items-center text-[#71717b]  hover:text-black"}>
+                            Linkedin
+                            <LinkIcon
+                                style={"" +
+                                    "scale-60 transition stroke-[#71717b] group-hover:stroke-[black] group-hover:-translate-y-[3px] group-hover:translate-x-[3px] "}/>
                         </a>
-                        <a href="/" className={"flex ml-5 items-center"}>
+
+                        <a href="/" className={"flex group transition ml-5 items-center text-[#71717b]  hover:text-black"}>
                             Resume
-                            <LinkIcon style={"scale-72"}/>
+                            <LinkIcon
+                                style={"" +
+                                    "scale-60 " +
+                                    "transition " +
+                                    "stroke-[#71717b] " +
+                                    "group-hover:stroke-[black] " +
+                                    "group-hover:-translate-y-[3px] " +
+                                    "group-hover:translate-x-[3px] "}
+
+                            />
                         </a>
 
                     </div>  {/********************************* left section *************************************/}
@@ -97,8 +112,8 @@ const Header = () => {
 
 
                     ">
-                        <HeaderButton style="mx-2">
-                            <GithubIcon />
+                        <HeaderButton style="ml-2 mr-3 ">
+                            <GithubIcon style={"scale-150"}/>
                         </HeaderButton>
 
                         <HeaderButton
@@ -120,8 +135,9 @@ const Header = () => {
                             flex
                             items-center
                             justify-start
-                            w-[120px]
+                            w-[130px]
                             pl-3
+                            mr-3
                             gap-4
                             h-[40px]
                             border
@@ -133,11 +149,13 @@ const Header = () => {
                             <div className="flex justify-center">
                               <span className="relative flex h-3 w-3">
                                 <span
-                                    className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75"
+                                    className={`absolute inline-flex h-full w-full animate-ping rounded-full ${Availability? "bg-green-500" : "bg-red-500 "} opacity-75`}
                                 ></span>
+
                                 <span
-                                    className="relative inline-flex h-3 w-3 rounded-full bg-green-500"
+                                    className={`relative inline-flex h-3 w-3 rounded-full ${Availability? "bg-green-500" : "bg-red-500 "}`}
                                 ></span>
+
                               </span>
                             </div>
 

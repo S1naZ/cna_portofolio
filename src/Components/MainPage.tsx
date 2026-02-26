@@ -12,7 +12,9 @@ const MainPage = () => {
                 border-x-[1px]
           ">
 
-                *
+
+
+
 
             </div>
         </>
