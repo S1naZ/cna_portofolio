@@ -134,9 +134,9 @@ const Header = () => {
                         <div className="
                             flex
                             items-center
-                            justify-start
-                            w-[130px]
-                            pl-3
+                            justify-between
+                            w-[160px]
+                            px-3
                             mr-3
                             gap-4
                             h-[40px]
@@ -165,6 +165,13 @@ const Header = () => {
                                     })}
                                 </span>
 
+                            <div className="flex-shrink-0">
+                                <img
+                                    src={'public/iranian-lion-and-sun-flag-seeklogo.png'}
+                                    alt="flag"
+                                    className="w-[20px] h-[10px]"
+                                />
+                            </div>
                         </div>
 
 
