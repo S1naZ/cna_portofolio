@@ -58,7 +58,7 @@ const Header = () => {
                     ">
 
                         <img
-                            src={'https://i1.sndcdn.com/avatars-000130915411-sbusk7-t500x500.jpg'}
+                            src={'/public/jkuiuyiuiu.jpg'}
                             alt="pfp"
 
                             className="
@@ -133,8 +133,9 @@ const Header = () => {
 
                         <div className="
                             flex
+                            relative
                             items-center
-                            justify-between
+                            justify-start
                             w-[160px]
                             px-3
                             mr-3
@@ -165,7 +166,7 @@ const Header = () => {
                                     })}
                                 </span>
 
-                            <div className="flex-shrink-0">
+                            <div className="block absolute right-3">
                                 <img
                                     src={'public/iranian-lion-and-sun-flag-seeklogo.png'}
                                     alt="flag"

@@ -22,7 +22,7 @@ const SideBar =()=>{
                 ">
 
                 <ul
-                    className= "flex flex-col h-fit w-[80%] ml-6 mt-8  text-[20px] ">
+                    className= "flex sticky top-[92px] flex-col h-fit w-[80%] ml-6 mt-8  text-[20px] ">
 
                     <div className="font-bold ml-3 mb-2">
                             Sections
