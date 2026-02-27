@@ -5,6 +5,7 @@ const SideBar =()=>{
                 flex
                 w-[239px]
                 h-full
+
                 border-r-1
                 border-r-[#e4e4e7]/50
 

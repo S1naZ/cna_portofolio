@@ -41,6 +41,7 @@ const Header = () => {
 
 
                 w-[1750px]
+                max-md:w-full
                 h-full
                 m-auto
                 border-x-[#e4e4e7]/50
